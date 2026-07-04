@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Thank You | J.F. Ng Creative Portfolio</title>
+
+<link rel="stylesheet" href="files/main_style6e02.css?1695445393">
+
+<link href="https://fonts.googleapis.com/css2?family=Actor&family=Alice&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<meta http-equiv="refresh" content="8; url=https://jfoongng.github.io/portfolio/">
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:#000;
+    color:#d5d5d5;
+    font-family:"Open Sans",sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:30px;
+}
+
+.card{
+
+    width:100%;
+    max-width:720px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(218,165,32,.30);
+
+    border-radius:18px;
+
+    padding:55px;
+
+    text-align:center;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+
+    backdrop-filter:blur(6px);
+
+}
+
+.icon{
+
+    font-size:64px;
+
+    margin-bottom:10px;
+
+}
+
+h1{
+
+    margin:0 0 18px;
+
+    color:#DAA520;
+
+    font-family:"Alice",serif;
+
+    font-size:48px;
+
+    font-weight:700;
+
+}
+
+.message{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    color:#d5d5d5;
+
+    max-width:540px;
+
+    margin:0 auto 35px;
+
+}
+
+.button{
+
+    display:inline-block;
+
+    padding:14px 34px;
+
+    background:#DAA520;
+
+    color:#000;
+
+    text-decoration:none;
+
+    border-radius:999px;
+
+    font-family:"Actor",sans-serif;
+
+    font-weight:bold;
+
+    letter-spacing:.04em;
+
+    transition:.25s;
+
+}
+
+.button:hover{
+
+    background:#f2c550;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(218,165,32,.35);
+
+}
+
+.note{
+
+    margin-top:25px;
+
+    font-size:13px;
+
+    color:#8f8f8f;
+
+}
+
+@media(max-width:700px){
+
+.card{
+
+padding:35px 25px;
+
+}
+
+h1{
+
+font-size:38px;
+
+}
+
+.message{
+
+font-size:15px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="icon">✓</div>
+
+<h1>Thank You!</h1>
+
+<p class="message">
+
+Your message has been sent successfully.
+
+<br><br>
+
+Thank you for taking the time to get in touch.
+I'll get back to you as soon as I can.
+
+</p>
+
+<a href="index.html" class="button">
+Back to Portfolio
+</a>
+
+<p class="note">
+
+You'll be redirected automatically in <span id="countdown">8</span> seconds.
+
+</p>
+
+</div>
+
+<script>
+
+let seconds = 8;
+
+const timer = document.getElementById("countdown");
+
+setInterval(function(){
+
+seconds--;
+
+if(seconds>=0){
+
+timer.textContent = seconds;
+
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
