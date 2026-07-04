@@ -235,8 +235,10 @@
     #footer { display: none; }
     
 /* Annual report slider only */
+#anime-magazine{margin-bottom:40px;}
+
 #annual-report.publication-slider{
-  max-width:704px;
+  max-width:640px;
   grid-template-columns:180px minmax(0,1fr);
 }
 #annual-report .slider-thumbs{
@@ -250,10 +252,10 @@
   height:90px;
 }
 #annual-report .slider-stage{
-  min-height:330px;
+  min-height:300px;
 }
 #annual-report .slide img{
-  max-height:594px;
+  max-height:540px;
 }
 
 @media (max-width: 760px) {
@@ -426,6 +428,15 @@
     slides.forEach((slide, i) => slide.classList.toggle('active', i === next));
     thumbs.forEach((thumb, i) => thumb.classList.toggle('active', i === next));
     slider.dataset.current = String(next);
+
+    const activeThumb = thumbs[next];
+    if (activeThumb && slider.id === 'annual-report') {
+      activeThumb.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'nearest'
+      });
+    }
   }
 
   document.querySelectorAll('.publication-slider').forEach(function (slider) {
