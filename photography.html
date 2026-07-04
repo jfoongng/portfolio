@@ -75,7 +75,62 @@
 <style>
 .wsite-background {background-image: url("uploads/4/7/1/4/47149761/background-images/470105809.jpg") !important;background-repeat: no-repeat !important;background-position: 50% 50% !important;background-size: 100% !important;background-color: transparent !important;background: inherit;}
 body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}
-</style><link rel='stylesheet' type='text/css' href='../cdn2.editmysite.com/css/old/slideshow/slideshow16e5.css?1696607734' />
+</style>
+<style>.photo-albums{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+    margin:40px 0;
+}
+
+.album-card{
+    position:relative;
+    display:block;
+    overflow:hidden;
+    border-radius:12px;
+    text-decoration:none;
+    background:#111;
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+    transition:.35s;
+}
+
+.album-card:hover{
+    transform:translateY(-6px);
+}
+
+.album-card img{
+    width:100%;
+    aspect-ratio:4/3;
+    object-fit:cover;
+    display:block;
+    transition:transform .5s;
+}
+
+.album-card:hover img{
+    transform:scale(1.06);
+}
+
+.album-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:24px;
+    background:linear-gradient(to top,rgba(0,0,0,.85),rgba(0,0,0,.1));
+}
+
+.album-overlay h3{
+    color:#DAA520;
+    margin:0;
+    font-size:1.4rem;
+}
+
+.album-overlay p{
+    color:#fff;
+    margin-top:8px;
+}</style>
+<link rel='stylesheet' type='text/css' href='../cdn2.editmysite.com/css/old/slideshow/slideshow16e5.css?1696607734' />
 
 		<script src='files/templateArtifacts6e02.js?1695445393'></script>
 <script>
@@ -262,81 +317,33 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 						
 
 <div><div style="height:10px;overflow:hidden"></div>
-<div id='678698670735025601-slideshow'></div>
-<script type='text/javascript'>
-(function(jQuery) {
-function init() { window.wSlideshow && window.wSlideshow.render({elementID:"678698670735025601",nav:"thumbnails",navLocation:"bottom",captionLocation:"bottom",transition:"fade",autoplay:"1",speed:"3",aspectRatio:"auto",showControls:"true",randomStart:"false",images:[{"url":"4/7/1/4/47149761/2356569.jpg","width":"400","height":"300","caption":"Mount Hutt, an hour from Christchurch is one of the most popular ski areas catering for all skiers and boarders."},{"url":"4/7/1/4/47149761/6385656.jpg","width":"400","height":"300","caption":"The shapes of Mt Hutt."},{"url":"4/7/1/4/47149761/750368.jpg","width":"400","height":"533","caption":"Cairn of Christchurch: This cairn is a marker, it marks the river of unease that presently flows through our community, a river whose turbulent waters threaten to divide us.\n"},{"url":"4/7/1/4/47149761/1633337.jpg","width":"400","height":"300","caption":"Glacier hiking in Franz Josef"},{"url":"4/7/1/4/47149761/2825024.jpg","width":"400","height":"300","caption":"Glacier ice: The glacier that is Franz Josef. .the melt rate is faster than the flow rate...Sadly, in future there won&#x27;t be such beauty anymore.\n"},{"url":"4/7/1/4/47149761/8800097.jpg","width":"400","height":"533","caption":"Lifeline: Ropes along the Franz Josef hike.\n"},{"url":"4/7/1/4/47149761/1989508.jpg","width":"400","height":"533","caption":"Franz Josef Adventure:..of snow, ice &amp; glacier"},{"url":"4/7/1/4/47149761/6776279.jpg","width":"400","height":"300","caption":"Steampunk HQ. Oamaru"},{"url":"4/7/1/4/47149761/1448309.jpg","width":"400","height":"533","caption":"Train tracks heading towards Steampunk HQ, Oamaru."},{"url":"4/7/1/4/47149761/3795321.jpg","width":"400","height":"533","caption":"Grainstore Gallery, Oamaru."},{"url":"4/7/1/4/47149761/7948535.jpg","width":"400","height":"300","caption":"The faces of many @ Grainstore Gallery, Oamaru"},{"url":"4/7/1/4/47149761/7413721.jpg","width":"400","height":"476","caption":"Hidden room @ Grainstore Gallery"},{"url":"4/7/1/4/47149761/1752542.jpg","width":"400","height":"300","caption":"Clay Cliffs: The Clay Cliffs at Omarama are made of layers of gravel and silt, deposited by rivers flowing from glaciers existing 1-2 million years ago. "},{"url":"4/7/1/4/47149761/9164189.jpg","width":"400","height":"300","caption":"The gift of rain at Clay Cliffs, Omarama."},{"url":"4/7/1/4/47149761/5593246.jpg","width":"400","height":"533","caption":"The Shell picker at Moeraki Boulders of Koekohe Beach, Otago coast."},{"url":"4/7/1/4/47149761/5358006.jpg","width":"400","height":"300","caption":"The Cross: Church of the Good Shepherd is situated on the shores of Lake Tekapo amongst the natural beauty of the lake and the mountains."},{"url":"4/7/1/4/47149761/5414543.jpg","width":"400","height":"533","caption":"The side of the Church overlooking Lake Tekapo."},{"url":"4/7/1/4/47149761/1534681.jpg","width":"400","height":"300","caption":"Man&#x27;s best friend: George accompanying me on the walking track of Parkwood Farm, Fairlie."},{"url":"4/7/1/4/47149761/1110451.jpg","width":"400","height":"533","caption":"Georgie!"},{"url":"4/7/1/4/47149761/6530853.jpg","width":"400","height":"300","caption":"Georgie&#x27;s Journey: Beautiful mountains on the walking trail of Parkwood Farm, Fairlie."},{"url":"4/7/1/4/47149761/2955722.jpg","width":"400","height":"533","caption":"Meow Power: A cat in need of a pet @ Fairlie town."},{"url":"4/7/1/4/47149761/3483260.jpg","width":"400","height":"300","caption":"Akaroa of the Canterbury Region is a historic French and British settlement nestled in the heart of an ancient volcano. "},{"url":"4/7/1/4/47149761/5145141.jpg","width":"400","height":"533","caption":"Silhouette of a woman: The Catlins Cathedral Caves&#x27; are one of the thirty longest sea caves in the world,located on Waipati Beach, Catlins, South Otago."},{"url":"4/7/1/4/47149761/3666854.jpg","width":"400","height":"264","caption":"Mirror image: Somewhere in Catlins.."},{"url":"4/7/1/4/47149761/3812942.jpg","width":"400","height":"300","caption":"Aoraki or Mount Cook is the highest mountain in New Zealand, reaching 3,724m."},{"url":"4/7/1/4/47149761/8550519.jpg","width":"400","height":"300","caption":" Hooker Valley Track is one of the most popular walks in Aoraki Mt Cook National Park. This scenic walk leads us into the foothills of the Southern Alps that offers excellent mountain, glacier and river views."},{"url":"4/7/1/4/47149761/3844636.jpg","width":"400","height":"300","caption":"Hokitika Beach"},{"url":"4/7/1/4/47149761/9154166.jpg","width":"400","height":"533","caption":"The horizon of Hokitika"},{"url":"4/7/1/4/47149761/1832305.jpg","width":"400","height":"533","caption":"The sands of Hokitika"},{"url":"4/7/1/4/47149761/235159.jpg","width":"400","height":"300","caption":"Castle Hill: It got its name because of the imposing array of limestone boulders in the area reminiscent of an old, run-down stone castle. They filmed Chronicles of Narnia somewhere near here."},{"url":"4/7/1/4/47149761/1304286.jpg","width":"400","height":"300","caption":"Medland beach of Abel Tasman National Park"},{"url":"4/7/1/4/47149761/4052593.jpg","width":"400","height":"533","caption":"Wairariki Beach of the Golden Bay area, Tasman Region is a wild, beautiful place where wind and waves have created massive rock and sand dune formations."},{"url":"4/7/1/4/47149761/9174908.jpg","width":"400","height":"533","caption":"Farewell Spit, at the tip of the South Island, is New Zealand&#x27;s longest sand spit. "},{"url":"4/7/1/4/47149761/6942918.jpg","width":"400","height":"300","caption":"Water trails: somewhere at Golden Bay area, Tasman region"},{"url":"4/7/1/4/47149761/2201326.jpg","width":"400","height":"300","caption":"Reflection: somewhere at Golden Bay area, Tasman region"},{"url":"4/7/1/4/47149761/7615831.jpg","width":"400","height":"533","caption":"Ducks Love Story: Feathers long forgotten at Wanaka."},{"url":"4/7/1/4/47149761/4693240.jpg","width":"400","height":"533","caption":"reconstructed example of how the Chinese Miner settlements look like at Goldfields mining centre, Cromwell."},{"url":"4/7/1/4/47149761/4397202.jpg","width":"400","height":"300","caption":"Cow made by recycleable materials..spotted at Queenstown."},{"url":"4/7/1/4/47149761/8178721.jpg","width":"400","height":"533","caption":"Freedom Flyer of Queenstown"},{"url":"4/7/1/4/47149761/2505816.jpg","width":"400","height":"533","caption":"Lake Dunstan of Cromwell."},{"url":"4/7/1/4/47149761/7434343.jpg","width":"400","height":"300","caption":"Old Cromwell Town Historic Reserve..this is how cromwell looks in olden times."},{"url":"4/7/1/4/47149761/6810067.jpg","width":"400","height":"300","caption":"Kaikoura of the north Canterbury Region."},{"url":"4/7/1/4/47149761/4618917.jpg","width":"400","height":"300","caption":"Kaikoura&#x27;s Beauty: By the coast of Kaikoura, North Canterbury."},{"url":"4/7/1/4/47149761/6283296.jpg","width":"400","height":"300","caption":"Sunbathing seal"},{"url":"4/7/1/4/47149761/4096106.jpg","width":"400","height":"533","caption":"The dream of a bird: Looking towards the Kaikoura coast."},{"url":"4/7/1/4/47149761/1864784.jpg","width":"400","height":"300","caption":"Seal pups playing at Ohau Stream, Kaikoura"},{"url":"4/7/1/4/47149761/6495153.jpg","width":"400","height":"300","caption":"Seal heaven: Seal lazing around by the Kaikoura Peninsula.."},{"url":"4/7/1/4/47149761/6404665.jpg","width":"400","height":"533","caption":"Aranui Cave at the Ruakuri Scenic Reserve. It is named after Ruruku Aranui, the local Maori man who first discovered this previously hidden gem back in 1910."},{"url":"4/7/1/4/47149761/8145022.jpg","width":"400","height":"300","caption":"Inferno Crater Lake..the largest geyser-like feature in the world at Waimangu Volcanic Valley, Rotorua."},{"url":"4/7/1/4/47149761/9604432.jpg","width":"400","height":"300","caption":"Mt Maunganui: the mountain by the sea."},{"url":"4/7/1/4/47149761/3197155.jpg","width":"400","height":"533","caption":"Te Waihou Blue Spring: Te Waihou, meaning &#x27;the new water&#x27; the colour of the Blue Spring is due to the high optical purity of the water."},{"url":"4/7/1/4/47149761/1266004.jpg","width":"400","height":"533","caption":"Daisy of Te Waihou walkway.."},{"url":"4/7/1/4/47149761/9604095.jpg","width":"400","height":"533","caption":"Baa baa.... @ One Tree Hill, Auckland."},{"url":"4/7/1/4/47149761/1009985.jpg","width":"400","height":"300","caption":"My model is a sheep! :p"},{"url":"4/7/1/4/47149761/3153862.jpg","width":"400","height":"300","caption":"Spring in Parnell Village, Auckland"}]}) }
-jQuery(document).ready(init);
-})(window.jQuery)
-</script>
+<div class="photo-albums">
 
-<div style="height:10px;overflow:hidden"></div></div>
+<a class="album-card" href="gallery/new-zealand.html">
+    <img src="photos/new-zealand/NZ002.jpg" alt="New Zealand Photography">
+    <div class="album-overlay">
+        <h3>Aotearoa ♥ New Zealand</h3>
+        <p>View Album</p>
+    </div>
+</a>
 
+<a class="album-card" href="gallery/bangkok.html">
+    <img src="photos/bangkok/BK026.jpg" alt="Bangkok Photography">
+    <div class="album-overlay">
+        <h3>Bangkok, Thailand</h3>
+        <p>View Album</p>
+    </div>
+</a>
 
-					
-				</td>				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
-					
-						
+<a class="album-card" href="gallery/yogyakarta.html">
+    <img src="photos/yogyakarta/YG006.jpg" alt="Yogyakarta Photography">
+    <div class="album-overlay">
+        <h3>Yogyakarta, Indonesia</h3>
+        <p>View Album</p>
+    </div>
+</a>
 
-<div><div style="height:20px;overflow:hidden"></div>
-<div id='285583661577075381-slideshow'></div>
-<script type='text/javascript'>
-(function(jQuery) {
-function init() { window.wSlideshow && window.wSlideshow.render({elementID:"285583661577075381",nav:"thumbnails",navLocation:"bottom",captionLocation:"bottom",transition:"fade",autoplay:"1",speed:"5",aspectRatio:"auto",showControls:"true",randomStart:"false",images:[{"url":"4/7/1/4/47149761/5387346.jpg","width":"400","height":"533","caption":"Hanging Banana"},{"url":"4/7/1/4/47149761/1205901.jpg","width":"400","height":"300","caption":"Damnoen Saduak floating market"},{"url":"4/7/1/4/47149761/17361.jpg","width":"400","height":"533","caption":"The Life of a Fruit seller: Fruit seller rowing her boat @ Damnoen Saduak floating market."},{"url":"4/7/1/4/47149761/714759.jpg","width":"400","height":"300","caption":"coconut pancake of Damnoen Saduak floating market.."},{"url":"4/7/1/4/47149761/6128291.jpg","width":"400","height":"300","caption":"A Painter&#x27;s world: The workstation of an artist.."},{"url":"4/7/1/4/47149761/650110.jpg","width":"400","height":"533","caption":"Hanging Crafts"},{"url":"4/7/1/4/47149761/991300.jpg","width":"400","height":"300","caption":"Songtheaw, another form of public transportation in Thailand..much cheaper than tuk-tuk and usually locals are the one using it."},{"url":"4/7/1/4/47149761/2831081.jpg","width":"400","height":"533","caption":"The palace has been the official residence of the Kings of Siam/Thailand since 1782. Nowadays, Grand Palace is still used for official events."},{"url":"4/7/1/4/47149761/4487501.jpg","width":"400","height":"533","caption":"One of the many halls of the temples of Grand Palace"},{"url":"4/7/1/4/47149761/5350183.jpg","width":"400","height":"300","caption":"Wat Phra Kaew: Temple of the Emerald Buddha @ Grand Palace."},{"url":"4/7/1/4/47149761/7471467.jpg","width":"400","height":"533","caption":"Restoration work in progress ."},{"url":"4/7/1/4/47149761/7133959.jpg","width":"400","height":"300","caption":"The test of time..everything fades in the face of time.."},{"url":"4/7/1/4/47149761/6349280.jpg","width":"400","height":"533","caption":"the glory of Wat Phra Kaew"},{"url":"4/7/1/4/47149761/268344.jpg","width":"400","height":"300","caption":"Buddha statues lining the hallway of the many temples at Grand Palace"},{"url":"4/7/1/4/47149761/7870573.jpg","width":"400","height":"533","caption":"Wat Arun: Temple of Dawn.."},{"url":"4/7/1/4/47149761/9553818.jpg","width":"400","height":"533","caption":"Steps of Wat Arun.."},{"url":"4/7/1/4/47149761/374208.jpg","width":"400","height":"300","caption":"Precious Porcelain: Decorated the walls of Wat Arun.."},{"url":"4/7/1/4/47149761/4746161.jpg","width":"400","height":"300","caption":"Asiatique The riverfront, along the side of Chao Phraya River."},{"url":"4/7/1/4/47149761/6899188.jpg","width":"400","height":"300","caption":"caricature artist at work @ Asiatique"},{"url":"4/7/1/4/47149761/3370286.jpg","width":"400","height":"300","caption":"Nice decor of the Japan theme street @ Asiatique"},{"url":"4/7/1/4/47149761/1729231.jpg","width":"400","height":"300","caption":"Itadakimasu!"},{"url":"4/7/1/4/47149761/1221813.jpg","width":"400","height":"533","caption":"Goddess of the hidden garden"},{"url":"4/7/1/4/47149761/1688217.jpg","width":"400","height":"300","caption":"When ancient meets modern"},{"url":"4/7/1/4/47149761/7532468.jpg","width":"400","height":"533","caption":"Colours of the light"},{"url":"4/7/1/4/47149761/5036746.jpg","width":"400","height":"300","caption":"Boat noodle alley near Victory Monument, Bangkok."},{"url":"4/7/1/4/47149761/9866227.jpg","width":"400","height":"300","caption":"Wat Chaiwatthanaram: the &quot;Angkor Watt&quot; of Thailand..in Ayuthayya. the center portion is built according to Cambodian architecture."},{"url":"4/7/1/4/47149761/3093077.jpg","width":"400","height":"533","caption":"The ruins of Wat Chaiwatthanaram"},{"url":"4/7/1/4/47149761/8847963.jpg","width":"400","height":"300","caption":"The war that destroyed most of the temples in Ayuthayya in ancient times.."},{"url":"4/7/1/4/47149761/9265543.jpg","width":"400","height":"533","caption":"Time travel: A peek into the past."},{"url":"4/7/1/4/47149761/8625001.jpg","width":"400","height":"300","caption":"Headless.."},{"url":"4/7/1/4/47149761/4599933.jpg","width":"400","height":"533","caption":"although Wat Chaiwatthanaram is in ruin, yet it stills stands tall and proud.."},{"url":"4/7/1/4/47149761/9534362.jpg","width":"400","height":"533","caption":"A journey..towards the river."},{"url":"4/7/1/4/47149761/9457539.jpg","width":"400","height":"533","caption":"Back of the buddha"},{"url":"4/7/1/4/47149761/186800.jpg","width":"400","height":"533","caption":"The steps up Wat Chaiwatthanaram"},{"url":"4/7/1/4/47149761/7948106.jpg","width":"400","height":"300","caption":"Elephant rides"},{"url":"4/7/1/4/47149761/9582523.jpg","width":"400","height":"533","caption":"The hallways of The grand palace of Ayuthayya"},{"url":"4/7/1/4/47149761/7467625.jpg","width":"400","height":"300","caption":"Wat Phra Sri Sanphet: It served as a model for the Temple of the Emerald Buddha in Bangkok."},{"url":"4/7/1/4/47149761/8016203.jpg","width":"400","height":"533","caption":"Forgotten prayers"},{"url":"4/7/1/4/47149761/4321792.jpg","width":"400","height":"533","caption":"Wat Mahathat of Ayutthaya: The head of buddha is naturally covered by the roots of the tree.."},{"url":"4/7/1/4/47149761/2691018.jpg","width":"400","height":"300","caption":"flowers for prayers @ wat mahathat"},{"url":"4/7/1/4/47149761/9330367.jpg","width":"400","height":"300","caption":"among the ruins of Wat Mahathat.."},{"url":"4/7/1/4/47149761/4237363.jpg","width":"400","height":"533","caption":"Brick tower"},{"url":"4/7/1/4/47149761/6569097.jpg","width":"400","height":"533","caption":"Squirrel..scrambling away.."},{"url":"4/7/1/4/47149761/6604452.jpg","width":"400","height":"533","caption":"Yaowarat: The chinatown of Bangkok.."},{"url":"4/7/1/4/47149761/4562618.jpg","width":"400","height":"533","caption":"pomegranate fruits &amp; juice.."},{"url":"4/7/1/4/47149761/2696696.jpg","width":"400","height":"300","caption":"Lazy meow..at Khlong Thom Night Market.."},{"url":"4/7/1/4/47149761/616232.jpg","width":"400","height":"533","caption":"you know you&#x27;re in Thailand when you see the familiar hand sign greeting!"},{"url":"4/7/1/4/47149761/2295134.jpg","width":"400","height":"300","caption":"Talad Rom Hub aka &quot;Closing Umbrella Market&quot;..also known as Maeklong Train Market. "},{"url":"4/7/1/4/47149761/6529273.jpg","width":"400","height":"490","caption":"Life at Maeklong Train Market: The vendors here lead a much more dramatic life than any other market vendors because the train runs through the market a few times a day. "},{"url":"4/7/1/4/47149761/9741355.jpg","width":"400","height":"533","caption":"Within minutes before the train arrives, the vendors shuffle for life, move their things away, pull down the umbrellas and make way for the train."},{"url":"4/7/1/4/47149761/9011971.jpg","width":"400","height":"300","caption":"Fresh crab for sales..@ Maeklong train market"},{"url":"4/7/1/4/47149761/6146205.jpg","width":"400","height":"322","caption":"Poverty...is still very much prevalent here."},{"url":"4/7/1/4/47149761/8683149.jpg","width":"400","height":"533","caption":"Troubled Monkey"}]}) }
-jQuery(document).ready(init);
-})(window.jQuery)
-</script>
-
-<div style="height:20px;overflow:hidden"></div></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-					
-						
-
-<div class="paragraph"><font color="#daa520" size="4">Yogyakarta, Indonesia</font><br /><font size="3">Explore the culture-rich heritage of Central Java. This album is taken using my camera and iphone 7 plus.</font></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-					
-						
-
-<div class="paragraph"></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
-					
-						
-
-<div><div style="height:20px;overflow:hidden"></div>
-<div id='441540132832711639-slideshow'></div>
-<script type='text/javascript'>
-(function(jQuery) {
-function init() { window.wSlideshow && window.wSlideshow.render({elementID:"441540132832711639",nav:"thumbnails",navLocation:"bottom",captionLocation:"bottom",transition:"fade",autoplay:"0",speed:"5",aspectRatio:"auto",showControls:"true",randomStart:"false",images:[{"url":"4/7/1/4/47149761/img-2174a.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-2200.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-2216.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-e2203.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-2247.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-e2352.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-2333.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-e2325.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-2332.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-2336.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3647.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-2394.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-2432.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3674.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3679.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-e2408.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-e2373.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-3696.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-2447.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-3558.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3721.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-2713.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-2757.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-2770a.jpg","width":"400","height":"417"},{"url":"4/7/1/4/47149761/img-3519.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-2504.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3579.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3728.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3735.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-3738.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-3772.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-3788.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3814.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-3822.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3836.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3854.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3857.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3862.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3903.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3905.jpg","width":"400","height":"533"},{"url":"4/7/1/4/47149761/img-3920.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3922.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3924.jpg","width":"400","height":"340"},{"url":"4/7/1/4/47149761/img-3928.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3930.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3568.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-3868.jpg","width":"400","height":"300"},{"url":"4/7/1/4/47149761/img-2778.jpg","width":"400","height":"300"}]}) }
-jQuery(document).ready(init);
-})(window.jQuery)
-</script>
+</div>
 
 <div style="height:20px;overflow:hidden"></div></div>
 
